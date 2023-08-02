@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Nav Area -->
+    <header>
+      <h1 class="name">CartoLee</h1>
+
+      <div class="search">
+        <input type="text" placeholder="Aramak istediğiniz ürünü giriniz" />
+        <img src="images/icons8-search-50.png" />
+      </div>
+
+      <div class="buttons">
+        <button id="totalShop">
+          <span id="totalSepet">Toplam:0$</span>
+        </button>
+        <button id="basket">
+          <span>Sepet</span><img src="images/icons8-buying-50.png" />
+        </button>
+        <button>
+          <span>Kayıt Ol</span><img src="images/icons8-register-50.png" />
+        </button>
+        <button>
+          <span>Giriş Yap</span><img src="images/icons8-login-50.png" />
+        </button>
+      </div>
+      <div class="menu">
+        <img src="images/icons8-menu-50.png" alt="" />
+      </div>
+    </header>
+    <!-- Main Area -->
+    <main>
+      <!-- Categories -->
+      <section id="category-area">
+        <h1>Kategoriler</h1>
+        <div class="categories"></div>
+      </section>
+
+      <!-- Products -->
+      <section id="product-area">
+        <h1>Ürünler</h1>
+        <div class="products"></div>
+      </section>
+    </main>
+
+    <!-- MODAL -->
+    <div class="modal-wrapper">
+      <div class="modal">
+        <div id="icon">
+          <img id="close" src="images/icons8-go-back-50.png" />
+        </div>
+        <div id="list">
+          <div class="item">
+            <img src="https://picsum.photos/640/640?r=9733" alt="" />
+            <h3 class="title">Marcos</h3>
+            <h4 class="price">315$</h4>
+            <p>Miktar: 3</p>
+            <img id="delete" src="images/icons8-delete-24.png" alt="" />
+          </div>
+        </div>
+        <p id="total">
+          <span id="count"></span> Toplam: <span id="total-price">0</span>$
+        </p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
